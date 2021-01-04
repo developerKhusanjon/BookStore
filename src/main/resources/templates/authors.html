@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>List of Users</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>First Name</td>
+            <td>Last Name</td>
+        </tr>
+        <tr th:each="author: ${authors}">
+            <td th:text="${author.firstname}"></td>
+            <td th:text="${author.lastname}"></td>
+        </tr>
+    </table>
+</body>
+</html>
